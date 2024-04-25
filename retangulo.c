@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 int main(){
 	
@@ -44,5 +43,5 @@ int main(){
 		printf("\nMedidas invalidas.\n");
 	}
 	
-	system("pause");
+	return 0;
 }

@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 int main()
 {
@@ -30,5 +29,5 @@ int main()
 		printf("\nQuantidade de termos invalida.\n");
 	}
 
-	system("pause");
+	return 0;
 }

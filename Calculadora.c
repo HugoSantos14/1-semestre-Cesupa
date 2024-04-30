@@ -1,11 +1,19 @@
 #include <stdio.h>
 #include <math.h>
 
+void linhas(){
+    printf("\n");
+    for(int i = 0; i < 73; i++){
+        printf("-");
+    }
+    printf("\n");
+}
+
 int main(){
 
     int op, n, i;
     float a, b;
-    printf("\n-------------------------------------------------------------------------\n");
+    linhas();
     printf("1 - Soma/subtracao\n");
     printf("2 - Multiplicacao\n");
     printf("3 - Divisao\n");
@@ -19,11 +27,11 @@ int main(){
     printf("11 - Tangente\n");
     printf("12 - Logaritmo de base 10\n");
     printf("13 - Logaritmo natural\n");
-    printf("\n0 - Sair\n");
-    printf("-------------------------------------------------------------------------\n");
+    printf("\n0 - Sair");
+    linhas();
     printf("\nEscolha uma operacao:\n> ");
     scanf("%d", &op);
-    printf("\n-------------------------------------------------------------------------\n");
+    linhas();
 
     switch (op)
     {
@@ -241,7 +249,7 @@ int main(){
 	    scanf("%d", &b);
 	    printf("Digite o valor de C:\n> ");
 	    scanf("%d", &c);
-        printf("\n-------------------------------------------------------------------------\n");
+        linhas();
 	    delta = b * b - 4 * a * c;
         xv = -b / (2 * a);
         yv = -delta / (4 * a);
@@ -349,6 +357,6 @@ int main(){
 
     }
 
-    printf("\n-------------------------------------------------------------------------\n");
+    linhas();
     return 0;
 }
